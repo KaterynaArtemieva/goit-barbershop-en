@@ -1,0 +1,119 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+}
+
+:root {
+    --accent-color:#FF6C00;
+    --main-color:#303030;
+    --light-color:#fff;
+
+}
+
+.no-style-type {
+  list-style-type: none;
+}
+
+.no-decor {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 1170px;
+  text-align: center;
+  background-color: darkgray;
+}
+/* Хедер */
+.social-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 58px;
+  outline: 2px solid tomato;
+}
+.social-list-item {
+    font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.2em;
+color: var(--main-color);
+font-style:normal;
+}
+.social-list-item:hover {
+    color: var(--accent-color);
+}
+.social-list-item:focus {
+    color: var(--accent-color);
+}
+.main-nav {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: 2px solid tomato;
+}
+.main-nav .item {
+  font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.1em;
+color: var(--light-color);
+}
+
+.main-nav .item:hover {
+  color: var(--accent-color);
+
+}
+.main-nav .item:focus {
+  color: var(--accent-color);
+
+}
+.contact {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: 2px solid tomato;
+}
+.contact .item {
+  font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--light-color);
+}
+
+.contact .item:hover {
+  color: var(--accent-color);
+
+}
+.contact .item:focus {
+  color: var(--accent-color);
+
+}
+.booking-btn {
+  box-sizing: border-box;
+  min-width: 160px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: var(--light-color);
+padding: 12px 20px;
+border: 1px solid var(--accent-color);
+border-radius: 25px;
+background-color: transparent;
+cursor: pointer;
+}
+.booking-btn:hover {
+  color: var(--accent-color);
+
+}
+.booking-btn:focus {
+  color: var(--accent-color);
+
+}
