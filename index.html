@@ -5,23 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"/>
-    <link rel="stylesheet" href="./styles/styles.css"/>
-    
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header class="container">
-      <section >
-        <h2 hidden>Sidebar</h2>
-        <a href="./"
-          ><img src="./images/Logo.svg" alt="logo" width="68" height="56"
-        /></a>
+      <section>
+        <nav>
+          <ul class="main-nav no-style-type">
+            <li><a href="./"
+              ><img src="./images/Logo.svg" alt="logo" width="68" height="56"
+            /></a></li>
+            <li><a href="#" class="no-decor item">About</a></li>
+            <li><a href="#" class="no-decor item">Services and prices</a></li>
+            <li><a href="#" class="no-decor item">Barbers</a></li>
+            <li><a href="#" class="no-decor item">Contacts</a></li>
+          </ul>
+          <ul class="contact no-style-type">
+            <li>
+              <a href="tel:+380441111111" class="no-decor item"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <button type="button" class="booking-btn">Online-booking</button>
+            </li>
+          </ul>
+        </nav>
         <address>
           <ul class="social-list no-style-type">
             <li>
@@ -33,20 +55,8 @@
           </ul>
         </address>
       </section>
+      </header>
       <section>
-        <nav>
-          <ul class="main-nav no-style-type">
-
-            <li><a href="#" class="no-decor item">About</a></li>
-            <li><a href="#" class="no-decor item">Services and prices</a></li>
-            <li><a href="#" class="no-decor item">Barbers</a></li>
-            <li><a href="#" class="no-decor item">Contacts</a></li>
-          </ul>
-          <ul class="contact no-style-type">
-            <li><a href="tel:+380441111111" class="no-decor item">+38 044 111 11 11</a></li>
-            <li><button type="button" class="booking-btn">Online-booking</button></li>
-          </ul>
-        </nav>
         <p>A hair salon for men in Kyiv</p>
         <h1>BarberShop</h1>
         <h3>
@@ -58,8 +68,6 @@
           <li><a href="#">Forward</a></li>
         </ul>
       </section>
-    </header>
-
     <main>
       <section>
         <ul>
