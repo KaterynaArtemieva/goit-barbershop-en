@@ -4,14 +4,14 @@ body {
 }
 
 :root {
-    --accent-color:#FF6C00;
-    --main-color:#303030;
-    --light-color:#fff;
-
+  --accent-color: #ff6c00;
+  --main-color: #303030;
+  --light-color: #fff;
 }
 
-.no-style-type {
+.list {
   list-style-type: none;
+  padding: 0;
 }
 
 .no-decor {
@@ -27,14 +27,20 @@ body {
   text-align: center;
   /* background-color: darkgray; */
 }
-h1, h2,h3, p, a,ul,li {
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
   margin: 0;
 }
 img {
   display: block;
 }
 /* Хедер */
-.section-adress{
+.section-adress {
   padding-top: 28px;
   padding-bottom: 58px;
   padding-left: 140px;
@@ -52,106 +58,128 @@ img {
   margin-right: 0;
 }
 .social-list-item {
-    font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-letter-spacing: 0.2em;
-color: var(--main-color);
-font-style:normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--main-color);
+  font-style: normal;
 }
 .social-list-item:hover {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .social-list-item:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
+}
+.navigation {
+  padding-top: 52px;
+  padding-right: 17px;
+  background-color: grey;
 }
 .section-nav {
   display: flex;
   align-items: center;
-  background-color: grey;
+  justify-content: space-between;
 }
 .nav-and-soc {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-list {
-display: flex;
-align-items: center;
-padding-left: 100px;
-padding-top: 40px;
-padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 254px;
 }
 a {
   display: inline-block;
 }
-.section-nav>a{
-  background-color:var(--light-color);
-  padding-right: 32px;
+.logo-link {
+  background-color: var(--light-color);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 .nav-item {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .nav-item:last-child {
   margin-right: 0;
 }
-.nav-list .item {
+.nav-link {
+  display: inline-block;
+  padding-top: 10 px;
+  padding-right: 10 px;
+  padding-bottom: 10 px;
+  padding-left: 10 px;
+
   font-weight: 600;
-font-size: 12px;
-line-height: calc(16/12);
-letter-spacing: 0.1em;
-color: var(--light-color);
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--light-color);
 }
 
-.main-nav .item:hover {
+.nav-link:hover {
   color: var(--accent-color);
-
 }
-.main-nav .item:focus {
+.nav-link:focus {
   color: var(--accent-color);
-
 }
 .contact {
-display: flex;
+  display: flex;
+  align-items: center;
+}
+.contact-item {
+  margin-right: 33px;
+  align-items: center;
+}
+.contact-item:last-child {
+  margin-right: 0;
 }
 .contact .item {
-  font-weight: 600;
-font-size: 12px;
-line-height: calc(16/12);
-letter-spacing: 0.1em;
-text-transform: uppercase;
+  display: block;
+  padding-top: 10 px;
+  padding-right: 10 px;
+  padding-bottom: 10 px;
+  padding-left: 10 px;
 
-color: var(--light-color);
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--light-color);
 }
 
 .contact .item:hover {
   color: var(--accent-color);
-
 }
 .contact .item:focus {
   color: var(--accent-color);
-
 }
 .booking-btn {
   box-sizing: border-box;
   min-width: 160px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-font-size: 12px;
-line-height: calc(16/12);
-letter-spacing: 0.09em;
-text-transform: uppercase;
-color: var(--light-color);
-padding: 12px 20px;
-border: 1px solid var(--accent-color);
-border-radius: 25px;
-background-color: transparent;
-cursor: pointer;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
 }
 .booking-btn:hover {
   color: var(--accent-color);
-
 }
 .booking-btn:focus {
   color: var(--accent-color);
-
 }
