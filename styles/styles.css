@@ -1,3 +1,4 @@
+/* Утилиты */
 body {
   font-family: "Open Sans", sans-serif;
   /* font-family: "Raleway", sans-serif; */
@@ -18,15 +19,7 @@ body {
   text-decoration: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1170px;
-  text-align: center;
-  /* background-color: darkgray; */
-}
+
 h1,
 h2,
 h3,
@@ -39,11 +32,22 @@ li {
 img {
   display: block;
 }
+a {
+  display: inline-block;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+  text-align: center;
+}
 /* Хедер */
 .section-adress {
-  padding-top: 28px;
-  padding-bottom: 58px;
-  padding-left: 140px;
+  padding-top: 18px;
+  padding-bottom: 48px;
+  padding-left: 130px;
   background-color: var(--light-color);
 }
 .social-list {
@@ -52,12 +56,16 @@ img {
   margin-top: 0;
 }
 .social-item {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .social-item:last-child {
   margin-right: 0;
 }
 .social-list-item {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -72,7 +80,7 @@ img {
   color: var(--accent-color);
 }
 .navigation {
-  padding-top: 52px;
+  padding-top: 32px;
   padding-right: 17px;
   background-color: grey;
 }
@@ -91,9 +99,6 @@ img {
   align-items: center;
   margin-right: 254px;
 }
-a {
-  display: inline-block;
-}
 .logo-link {
   background-color: var(--light-color);
   padding-top: 10px;
@@ -108,11 +113,11 @@ a {
   margin-right: 0;
 }
 .nav-link {
-  display: inline-block;
-  padding-top: 10 px;
-  padding-right: 10 px;
-  padding-bottom: 10 px;
-  padding-left: 10 px;
+  
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
   font-weight: 600;
   font-size: 12px;
@@ -139,13 +144,12 @@ a {
   margin-right: 0;
 }
 .contact .item {
-  display: block;
-  padding-top: 10 px;
-  padding-right: 10 px;
-  padding-bottom: 10 px;
-  padding-left: 10 px;
+  
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 
-  align-items: center;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(16 / 12);
@@ -182,4 +186,49 @@ a {
 }
 .booking-btn:focus {
   color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+  background: rgba(25, 28, 38, 0.2);
+}
+.hero-main {
+    padding: 184px 526px 208px 100px;
+
+  background-image: url(../images/bcg-img.jpg);
+  background-size: cover;
+}
+.hero-text {
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: rgba(157, 164, 189, 0.6);
+
+}
+.hero-title{
+  margin-bottom: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85/72);
+  
+  letter-spacing: 0.05em;
+  
+  color: var(--light-color);
+  
+  
+}
+.hero-subtitle {
+  font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+
 }
