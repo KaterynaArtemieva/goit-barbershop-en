@@ -36,6 +36,13 @@ img {
 a {
   display: inline-block;
 }
+address {
+  font-style: normal;
+}
+.address {
+  text-decoration: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -195,7 +202,7 @@ a {
 .hero-main {
     padding: 184px 526px 208px 100px;
 
-  background-image: url(../images/bcg-img.jpg);
+  background-image: url(../images/bcg-img-1.jpg);
   background-size: cover;
 }
 .hero-text {
@@ -237,31 +244,211 @@ letter-spacing: 0.02em;
 color: #9DA4BD;
 
 }
-/* Бест барбершоп */
-.dignity {
+/* about барбершоп */
+.about {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.dignity-info {
+.about-info {
   display: flex;
 
 }
-.portfolio-list {
+.about-list {
   display: flex;
   margin-right: 30px;
 }
-.portfolio-item {
+.about-item {
   margin-right: 30px;
 }
-.portfolio-item:last-child {
+.about-item:last-child {
   margin-right: 0;
 }
-.portfolio-img {
+.about-img {
   width: 270px;
 }
-.dignity-descr {
+.about-descr {
     padding-right: 100px;
 
+  text-align: left;
+}
+.about-subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: var(--main-color);
+
+}
+.about-title {
+  margin-bottom: 20px;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+
+color: var(--main-color);
+}
+.about-text-1 {
+  margin-bottom: 20px;
+  font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: var(--last-color);
+}
+.about-text-2 {
+  margin-bottom: 42px;
+  font-size: 14px;
+line-height: 1.86;
+
+letter-spacing: 0.02em;
+
+color: var(--last-color);
+
+}
+.about-descr>.booking-btn {
+  color: var(--main-color);
+}
+/* Цены */
+.prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: left;
+}
+.prices {
+  background-color: #111319;
+background-size: cover;
+  background-image: url(../images/bcg-img-2.svg);
+background-repeat: no-repeat;
+}
+.prices-subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  margin-bottom: 44px;
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+
+color: var(--light-color);
+
+}
+.prices-lists-all {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.prices-list-1, .prices-list-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  width: 570px;
+margin-right: 30px;
+flex-wrap: wrap;
+}
+.prices-list-1{
+background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list-2 {
+  margin-right: 0;
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices-item {
+  margin-right: 100px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: calc(30/18);
+  
+  letter-spacing: 0.02em;
+  
+  color: #9DA4BD;
+  
+}
+.prices-item:nth-child(2n) {
+  margin-right: 0;
+  text-align: end;
+}
+.prices-item:nth-child(n+7) {
+  margin-bottom: 0;
+}
+.prices .booking-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Преимущества */
+.dignity {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-height: 571px;
+}
+.dignity-page {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+.dignity-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dignity-item {
+  background: #F7F7F7;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
+
+}
+.dignity-item:nth-child(2n) {
+margin-right: 0;
+}
+.dignity-item>h2 {
+  margin-bottom: 6px;
+  font-weight: 700;
+font-size: 42px;
+line-height: calc(57/42);
+text-align: center;
+letter-spacing: 0.05em;
+
+color: var(--main-color);
+}
+.dignity-item sup {
+  font-weight: 600;
+font-size: 16px;
+line-height: calc(22/16);
+text-align: center;
+
+color: var(--accent-color);
+
+}
+.dignity-item>p {
+  max-width: 122px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-align: center;
+
+color: var(--main-color);
+
+
+}
+.dignity-descr {
   text-align: left;
 }
 .dignity-subtitle {
@@ -277,7 +464,8 @@ color: var(--main-color);
 }
 .dignity-title {
   margin-bottom: 20px;
-font-family: 'Raleway';
+max-width: 430px;
+  font-family: 'Raleway';
 font-weight: 700;
 font-size: 42px;
 line-height: calc(49/42);
@@ -285,29 +473,174 @@ letter-spacing: 0.05em;
 
 color: var(--main-color);
 }
-.text-1 {
-  margin-bottom: 20px;
+.dignity-text {
   font-size: 18px;
 line-height: 1.67;
 
 letter-spacing: 0.02em;
 
 color: var(--last-color);
+
 }
-.text-2 {
-  margin-bottom: 42px;
+/* Барберы */
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background:  #F7F7F7;
+}
+.barbers-text {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: var(--main-color);
+
+}
+.barbers-title {
+  text-align: left;
+margin-bottom: 44px;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+
+color: var(--main-color);
+
+}
+.barbers-list {
+  display: flex;
+}
+.barbers-item {
+  margin-right: 30px;
+}
+.barbers-item:last-child {
+  margin-right: 0;
+}
+.barbers-img {
+  margin-bottom: 30px;
+}
+.barbers-item>h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+line-height: calc(25/18);
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--main-color);
+}
+.barbers-item>p {
   font-size: 14px;
-line-height: 1.86;
+line-height: calc(19/14);
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--accent-color);
+}
+/* Портфолио */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio p {
+  text-align: left;
+  margin-bottom: 44px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: var(--main-color);
+
+}
+.portfolio-list {
+  display: flex;
+}
+.portfolio-item {
+  margin-right: 30px;
+}
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+/* Контакты */
+.action {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: #191C26;
+}
+.book-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-title {
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+
+color: var(--light-color);
+}
+.contacts {
+  background-image: url(../images/bcg-img-3.svg);
+}
+.contacts-title {
+  margin-bottom: 40px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49/42);
+  letter-spacing: 0.05em;
+  
+  color: var(--light-color);
+  
+}
+.contacts-list {
+  text-decoration: none;
+}
+.contacts-item>p {
+  text-align: left;
+  font-weight: 700;
+font-size: 18px;
+line-height: 1.67;
 
 letter-spacing: 0.02em;
 
-color: var(--last-color);
+color: #9DA4BD;
 
 }
-.dignity-descr>.booking-btn {
-  color: var(--main-color);
+.contacts-item>a {
+  text-align: left;
+
+  font-weight: 700;
+font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;;
+
 }
-/* Цены */
+.contact-item>a {
+  font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+}
+.contacts-text {
+}
+.contacts-subtitle {
+}
 
 
 
