@@ -8,6 +8,7 @@ body {
   --accent-color: #ff6c00;
   --main-color: #303030;
   --light-color: #fff;
+  --last-color: #555555;
 }
 
 .list {
@@ -15,7 +16,7 @@ body {
   padding: 0;
 }
 
-.no-decor {
+.link {
   text-decoration: none;
 }
 
@@ -168,7 +169,6 @@ a {
 .booking-btn {
   box-sizing: border-box;
   min-width: 160px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(16 / 12);
@@ -237,3 +237,77 @@ letter-spacing: 0.02em;
 color: #9DA4BD;
 
 }
+/* Бест барбершоп */
+.dignity {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.dignity-info {
+  display: flex;
+
+}
+.portfolio-list {
+  display: flex;
+  margin-right: 30px;
+}
+.portfolio-item {
+  margin-right: 30px;
+}
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+.portfolio-img {
+  width: 270px;
+}
+.dignity-descr {
+    padding-right: 100px;
+
+  text-align: left;
+}
+.dignity-subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+
+text-transform: uppercase;
+
+color: var(--main-color);
+
+}
+.dignity-title {
+  margin-bottom: 20px;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+
+color: var(--main-color);
+}
+.text-1 {
+  margin-bottom: 20px;
+  font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: var(--last-color);
+}
+.text-2 {
+  margin-bottom: 42px;
+  font-size: 14px;
+line-height: 1.86;
+
+letter-spacing: 0.02em;
+
+color: var(--last-color);
+
+}
+.dignity-descr>.booking-btn {
+  color: var(--main-color);
+}
+/* Цены */
+
+
+
