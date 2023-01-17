@@ -29,75 +29,68 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="container nav">
-      <section class="navigation">
+    <header class="box" data-header>
+      <div class="container">
         <nav class="section-nav">
-          <a href="./index.html" class="logo-link"
-            ><img src="./images/Logo.svg" alt="logo" width="68" height="56"
-          /></a>
-          <div class="nav-and-soc">
-            <ul class="nav-list list">
-              <li class="nav-item">
-                <a href="#" class="link nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link nav-link">Services and prices</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link nav-link">Barbers</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link nav-link">Contacts</a>
-              </li>
-            </ul>
-            <ul class="contact list">
-              <li class="contact-item">
-                <a href="tel:+380441111111" class="link item"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="contact-item">
-                <button type="button" class="booking-btn">
-                  Online-booking
-                </button>
-              </li>
-            </ul>
-          </div>
+          <a href="./index.html" class="logo-link">
+            <svg width="69" height="56" class="logo-icon">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <button type="button" class="mobile-menu-open">
+            <svg width="40" height="40" class="mobile-menu-open-icon">
+              <use href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a href="#" class="link nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link nav-link">Services and prices</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link nav-link">Barbers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link nav-link">Contacts</a>
+            </li>
+          </ul>
         </nav>
-      </section>
+        <ul class="contact-list list">
+          <li class="contact-item">
+            <a href="tel:+380441111111" class="link item">+38 044 111 11 11</a>
+          </li>
+          <li class="contact-item">
+            <button type="button" class="booking-btn">Online-booking</button>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!-- Герой -->
       <section class="hero">
         <div class="container hero-wrap">
-          <address class="section-adress">
-            <ul class="social-list list">
-              <li class="social-item">
-                <a href="#" class="social-list-link link">Instagram</a>
-              </li>
-              <li class="social-item">
-                <a href="#" class="social-list-link link">Youtube</a>
-              </li>
-            </ul>
-          </address>
-          <div class="hero-main">
-            <h3 class="hero-text">A hair salon for men in Kyiv</h3>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-subtitle">
-              We are experts in trendy men’s haircuts. <br />
-              work quickly, carefully and with style.
-            </p>
-            <!-- <ul>
-          <li><a href="#">Back</a></li>
-          <li><a href="#">Forward</a></li>
-        </ul> -->
-          </div>
+          <ul class="social-list list">
+            <li class="social-item">
+              <a href="#" class="social-link link">Instagram</a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link link">Youtube</a>
+            </li>
+          </ul>
+          <h3 class="hero-subtitle line">A hair salon for men in Kyiv</h3>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-text">
+            We are experts in trendy men’s haircuts. <br />
+            We work quickly, carefully and with style.
+          </p>
         </div>
       </section>
 
-      <!-- about барбершоп -->
+      <!-- About барбершоп -->
       <section class="about">
-        <div class="container about-info">
+        <div class="container">
           <ul class="about-list list">
             <li class="about-item">
               <img
@@ -118,22 +111,20 @@
               />
             </li>
           </ul>
-          <div class="about-descr">
-            <h3 class="about-subtitle">About</h3>
-            <h2 class="about-title">Best Barbershop in your city</h2>
-            <p class="about-text-1">
-              If you want to add more confidence to your image, you should
-              definitely visit us.
-            </p>
-            <p class="about-text-2">
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
-              ready to improve everyone who comes to us!
-            </p>
-            <button type="button" class="booking-btn">ONLINE-BOOKING</button>
-          </div>
+          <h3 class="about-subtitle">About</h3>
+          <h2 class="about-title">Best Barbershop in your city</h2>
+          <p class="about-text-1">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+          <p class="about-text-2">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button type="button" class="booking-btn">ONLINE-BOOKING</button>
         </div>
       </section>
       <!-- Цены -->
@@ -144,7 +135,7 @@
           <div class="prices-lists-all">
             <ul class="prices-list-1 list">
               <li class="prices-item">
-                <p>Men’s haircut</p>
+                <p class="prices-item-service">Men’s haircut</p>
                 <p>from 300 uah.</p>
               </li>
               <li class="prices-item">
@@ -341,5 +332,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./js/header.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 /* Утилиты */
 body {
   font-family: "Open Sans", sans-serif;
-  /* font-family: "Raleway", sans-serif; */
+  color: var(--main-color);
 }
 
 :root {
@@ -12,7 +12,6 @@ body {
 
   --timing-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .list {
@@ -50,639 +49,184 @@ address {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  text-align: center;
+  padding-left: 31px;
+  padding-right: 31px;
+  min-width: 320px;
+  max-width: 480px;
 }
+
 /* Хедер */
-.section-adress {
-  max-width: 100px;
-  display: flex;
-  /* transform: rotate(-90deg); */
 
-  background-color: var(--light-color);
-}
-.social-list {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  justify-content: center;
-  left: 0;
-  /* transform: rotate(-90deg); */
-  padding: 0;
-  margin-top: 0;
-}
-.social-item {
-  /* position: absolute; */
-  transform: rotate(-90deg);
-
-  /* margin-right: 20px; */
-}
-.social-item:last-child {
-  margin-right: 0;
-}
-.social-list-link {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.2em;
-  color: var(--main-color);
-  font-style: normal;
-}
-.social-list-item:hover,
-.social-list-item:focus {
-  color: var(--accent-color);
-}
-.container.nav {
-  position: relative;
-}
-.navigation {
-  position: absolute;
+.box {
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 17px;
-  padding-top: 22px;
-  padding-right: 17px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: background-color var(--timing-duration) var(--timing-function), backdrop-filter var(--timing-duration) var(--timing-function);
+}
+.box.no-transparency {
+  background-color: rgba(25, 28, 38, 0.5);
+  backdrop-filter: blur(4px);
 }
 .section-nav {
-  /* position: absolute; */
-  top:0;
-  right: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-and-soc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-list {
-  display: flex;
-  align-items: center;
-  margin-right: 254px;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo-link {
-  background-color: var(--light-color);
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  fill: var(--light-color);
 }
-.nav-item {
-  margin-right: 10px;
-}
-.nav-item:last-child {
-  margin-right: 0;
-}
-.nav-link {
-  
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    transition: color var(--timing-duration) var(--timing-function);
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.1em;
-  color: var(--light-color);
+.mobile-menu-open {
+border: none;
+background-color: transparent;
+padding: 0;
+line-height: 0;
+fill: var(--light-color);
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-.contact {
-  display: flex;
-  align-items: center;
-}
-.contact-item {
-  margin-right: 33px;
-  align-items: center;
-}
-.contact-item:last-child {
-  margin-right: 0;
-}
-.contact .item {
-  
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-
-    transition: color var(--timing-duration) var(--timing-function);
-
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--light-color);
-}
-
-.contact .item:hover,
-.contact .item:focus {
-  color: var(--accent-color);
-}
-.booking-btn {
-  transition: color var(--timing-duration) var(--timing-function);
-
-  box-sizing: border-box;
-  min-width: 160px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--light-color);
-  padding: 12px 20px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  background-color: transparent;
-  cursor: pointer;
-}
-.booking-btn:hover,
-.booking-btn:focus {
-  color: var(--accent-color);
+@media screen and (max-width: 767.98px) {
+  .nav-list {
+    display: none;
+  }
+  .contact-list {
+    display: none;
+  }
 }
 
 /* Герой */
-.hero-wrap {
-  display: flex;
+
+.hero {
+  background-image: linear-gradient( rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2) ), url(../images/mobile/slider_bkg_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  padding-top: 208px;
+  padding-bottom: 208px;
 }
-.hero-main {
-    padding: 272px 526px 208px 100px;
-background-color: grey;
-  background-image: url(../images/bcg-img-1.jpg);
-  background-size: cover;
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+  background-image: linear-gradient( rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2) ),  url(../images/mobile/slider_bkg_3@2x.jpg);
 }
-.hero-text {
+}
+.hero-subtitle {
+    display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  text-align: left;
   font-weight: 600;
 font-size: 11px;
 line-height: calc(15/11);
-
+letter-spacing: 0.1em;
 text-transform: uppercase;
-
 color: rgba(157, 164, 189, 0.6);
-
 }
-.hero-title{
+.hero-title {
   margin-bottom: 20px;
-    text-align: left;
-
   font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: calc(85/72);
-  
-  letter-spacing: 0.05em;
-  
-  color: var(--light-color);
-  
-  
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: calc(56/48);
+letter-spacing: 0.05em;
+color: var(--light-color);
 }
-.hero-subtitle {
-    text-align: left;
-
-  font-size: 18px;
-line-height: 1.67;
-
+.hero-text {
+  font-size: 16px;
+line-height: 1.62;
 letter-spacing: 0.02em;
-
 color: #9DA4BD;
-
 }
-/* about барбершоп */
-.about {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-h3::before {
-  display: inline-block;
+.hero-subtitle::before {
   margin-right: 20px;
   content: '';
   width: 60px;
   height: 1px;
-  background-color: currentColor;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+@media screen and (max-width:767.98px) {
+.social-list {
+  display: none;
+}
+}
 
-}
-.about-info {
-  display: flex;
+/* About барбершоп */
 
+.about {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
-.about-list {
-  display: flex;
-  margin-right: 30px;
-}
-.about-item {
-  margin-right: 30px;
-}
-.about-item:last-child {
-  margin-right: 0;
-}
-.about-img {
-  width: 270px;
-}
-.about-descr {
-    padding-right: 100px;
-
-  text-align: left;
-}
-h3 {
-  display: flex;
-  align-items: center
-
+@media screen and (max-width: 767.98px) {
+  .about-list {
+    display: none;
+  }
 }
 .about-subtitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-
   font-weight: 600;
 font-size: 11px;
 line-height: calc(15/11);
-
 text-transform: uppercase;
-
-color: var(--main-color);
-
+}
+.about-subtitle::before {
+  margin-right: 20px;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-color);
 }
 .about-title {
+  width: 306px;
   margin-bottom: 20px;
-font-family: 'Raleway';
+  font-family: 'Raleway';
 font-weight: 700;
-font-size: 42px;
-line-height: calc(49/42);
+font-size: 28px;
+line-height: calc(33/28);
 letter-spacing: 0.05em;
-
-color: var(--main-color);
 }
 .about-text-1 {
   margin-bottom: 20px;
-  font-size: 18px;
-line-height: 1.67;
-
+  font-size: 16px;
+line-height: 1.62;
 letter-spacing: 0.02em;
-
 color: var(--last-color);
 }
 .about-text-2 {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   font-size: 14px;
 line-height: 1.86;
-
 letter-spacing: 0.02em;
-
 color: var(--last-color);
-
 }
-.about-descr>.booking-btn {
-  color: var(--main-color);
-}
-/* Цены */
-.prices {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  text-align: left;
-}
-.prices {
-  background-color: #111319;
-background-size: cover;
-  background-image: url(../images/bcg-img-2.svg);
-background-repeat: no-repeat;
-}
-.prices-subtitle {
-  margin-bottom: 20px;
-  font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-
+.booking-btn {
+  padding: 12px 20px;
+  border: 1px solid #FF6C00;
+border-radius: 25px;
+background-color: transparent;
+font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.09em;
 text-transform: uppercase;
-
-color: rgba(157, 164, 189, 0.6);
-}
-.prices-title {
-  text-align: left;
-  margin-bottom: 44px;
-  font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: calc(49/42);
-letter-spacing: 0.05em;
-
-color: var(--light-color);
-
-}
-.prices-lists-all {
-  display: flex;
-  margin-bottom: 44px;
 }
 
-.prices-list-1, .prices-list-2 {
-  width: 570px;
-  margin-right: 30px;
-  /* display: flex;
-  justify-content: space-between;
-  padding: 30px 20px;
-  width: 570px;
+/* Цены */
 
-flex-wrap: wrap; */
-}
-.prices-list-1{
-background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-.prices-list-2 {
-  margin-right: 0;
-  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
 .prices-item {
   display: flex;
-  justify-content: space-between;
-  /* margin-right: 100px;
-  margin-bottom: 20px; */
-  font-size: 18px;
-  line-height: calc(30/18);
-  
-  letter-spacing: 0.02em;
-  
-  color: #9DA4BD;
-  
+
 }
-.prices-item:nth-child(2n) {
-  margin-right: 0;
-  text-align: end;
+.prices-item-service {
+  display: flex;
 }
-.prices-item:nth-child(n+7) {
-  margin-bottom: 0;
-}
-.prices .booking-btn {
+.prices-item-service::after {
+  content: '';
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  height: 1px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: rgba(157, 164, 189, 0.12);
 }
-
-/* Преимущества */
-.dignity {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  max-height: 571px;
-}
-.dignity-page {
-  display: flex;
-  padding-left: 100px;
-  padding-right: 70px;
-}
-.dignity-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.dignity-item {
-  background: #F7F7F7;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  padding: 20px 24px;
-  width: 170px;
-  height: 133px;
-
-}
-.dignity-item:nth-child(2n) {
-margin-right: 0;
-}
-.dignity-item>h2 {
-  margin-bottom: 6px;
-  font-weight: 700;
-font-size: 42px;
-line-height: calc(57/42);
-text-align: center;
-letter-spacing: 0.05em;
-
-color: var(--main-color);
-}
-.dignity-item sup {
-  font-weight: 600;
-font-size: 16px;
-line-height: calc(22/16);
-text-align: center;
-
-color: var(--accent-color);
-
-}
-.dignity-item>p {
-  max-width: 122px;
-  font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-text-align: center;
-
-color: var(--main-color);
-
-
-}
-.dignity-descr {
-  text-align: left;
-}
-.dignity-subtitle {
-  margin-bottom: 20px;
-  font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-
-text-transform: uppercase;
-
-color: var(--main-color);
-
-}
-.dignity-title {
-  margin-bottom: 20px;
-max-width: 430px;
-  font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: calc(49/42);
-letter-spacing: 0.05em;
-
-color: var(--main-color);
-}
-.dignity-text {
-  font-size: 18px;
-line-height: 1.67;
-
-letter-spacing: 0.02em;
-
-color: var(--last-color);
-
-}
-/* Барберы */
-.barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background:  #F7F7F7;
-}
-.barbers-text {
-  text-align: left;
-  margin-bottom: 20px;
-  font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-
-text-transform: uppercase;
-
-color: var(--main-color);
-
-}
-.barbers-title {
-  text-align: left;
-margin-bottom: 44px;
-  font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 42px;
-line-height: calc(49/42);
-letter-spacing: 0.05em;
-
-color: var(--main-color);
-
-}
-.barbers-list {
-  display: flex;
-}
-.barbers-item {
-  margin-right: 30px;
-}
-.barbers-item:last-child {
-  margin-right: 0;
-}
-.barbers-img {
-  margin-bottom: 30px;
-}
-.barber-name {
-  margin-bottom: 8px;
-  font-size: 18px;
-line-height: calc(25/18);
-
-text-align: center;
-letter-spacing: 0.02em;
-
-color: var(--main-color);
-}
-.barber-position {
-  font-size: 14px;
-line-height: calc(19/14);
-
-text-align: center;
-letter-spacing: 0.02em;
-
-color: var(--accent-color);
-}
-/* Портфолио */
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.portfolio-subtitle {
-  text-align: left;
-  margin-bottom: 44px;
-  font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-
-text-transform: uppercase;
-
-color: var(--main-color);
-
-}
-.portfolio-list {
-  display: flex;
-}
-.portfolio-item {
-  margin-right: 30px;
-}
-.portfolio-item:last-child {
-  margin-right: 0;
-}
-/* Контакты */
-.action {
-  padding-top: 130px;
-  padding-bottom: 120px;
-  background-color: #191C26;
-}
-.book-cont {
-  display: flex;
-  justify-content: space-between;
-}
-.booking-title {
-  font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: calc(49/42);
-letter-spacing: 0.05em;
-
-color: var(--light-color);
-}
-.contacts {
-  background-image: url(../images/bcg-img-3.svg);
-}
-.contacts-title {
-  margin-bottom: 40px;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49/42);
-  letter-spacing: 0.05em;
-  
-  color: var(--light-color);
-  
-}
-.contacts-list {
-  text-decoration: none;
-}
-.contacts-item>p {
-  text-align: left;
-  font-weight: 700;
-font-size: 18px;
-line-height: 1.67;
-
-letter-spacing: 0.02em;
-
-color: #9DA4BD;
-
-}
-.contacts-item>a {
-  text-align: left;
-
-  font-weight: 700;
-font-size: 18px;
-line-height: 1.67;
-
-letter-spacing: 0.02em;
-
-color: #9DA4BD;;
-
-}
-.contact-item>a {
-  font-size: 18px;
-line-height: 1.67;
-
-letter-spacing: 0.02em;
-
-color: #9DA4BD;
-}
-.contacts-text {
-}
-.contacts-subtitle {
-}
-
-
-
