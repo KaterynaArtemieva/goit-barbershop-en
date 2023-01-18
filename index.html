@@ -418,11 +418,11 @@
                   type="image/jpg"
                 />
                 <img
-                src="./images/mobile/photo_1.jpg"
-                alt="photo 1"
-                width="418"
-                height="360"
-              />
+                  src="./images/mobile/photo_1.jpg"
+                  alt="photo 1"
+                  width="418"
+                  height="360"
+                />
               </picture>
             </li>
             <li class="portfolio-item">
@@ -444,11 +444,11 @@
                   type="image/jpg"
                 />
                 <img
-                src="./images/mobile/photo_2.jpg"
-                alt="photo 2"
-                width="418"
-                height="360"
-              />
+                  src="./images/mobile/photo_2.jpg"
+                  alt="photo 2"
+                  width="418"
+                  height="360"
+                />
               </picture>
             </li>
             <li class="portfolio-item">
@@ -470,11 +470,11 @@
                   type="image/jpg"
                 />
                 <img
-                src="./images/mobile/photo_3.jpg"
-                alt="photo 3"
-                width="418"
-                height="360"
-              />
+                  src="./images/mobile/photo_3.jpg"
+                  alt="photo 3"
+                  width="418"
+                  height="360"
+                />
               </picture>
             </li>
             <li class="portfolio-item">
@@ -496,45 +496,75 @@
                   type="image/jpg"
                 />
                 <img
-                src="./images/mobile/photo_4.jpg"
-                alt="photo 4"
-                width="418"
-                height="360"
-              />
+                  src="./images/mobile/photo_4.jpg"
+                  alt="photo 4"
+                  width="418"
+                  height="360"
+                />
               </picture>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Контакты -->
-      <section class="action">
-        <div class="container book-cont">
+      <!-- Форма -->
+      <form class="booking-form">
+        <div class="container">
           <h2 class="booking-title">Online-booking</h2>
-          <div class="contacts">
-            <h2 class="contacts-title">Contacts</h2>
-            <address>
-              <ul class="contacts-list list">
-                <li class="contacts-item">
-                  <p>
-                    st. Vasilkivska, 7A <br />
-                    Kyiv, 08132
-                  </p>
-                </li>
-                <li class="contacts-item">
-                  <a class="address" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
+          <input
+            class="booking-form-input"
+            type="text"
+            name="user_name"
+            minlength="2"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+            placeholder="Name*"
+          />
+          <input
+            class="booking-form-input"
+            type="tel"
+            name="user_phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone*"
+          />
+          <textarea
+            class="booking-form-message"
+            name="user_message"
+            placeholder="Message"
+          ></textarea>
+          <button class="booking-btn price-btn" type="submit">Send</button>
+        </div>
+      </form>
+      <!-- Контакты -->
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts-title">Contacts</h2>
+          <address class="contacts-adress">
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#map-pin"></use>
+                </svg>st. Vasilkivska, 7A, Kyiv, 08132</li>
+              <li class="contacts-item">
+                <a class="contacts-phone" href="tel:+380441111111"
                   >
-                </li>
-                <li class="contacts-item">
-                  <a class="address" href="mailto:barbershop@email.com"
-                    >barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts-text">Working hours</p>
-            <h3 class="contacts-subtitle">Every day from 9:00 to 22:00</h3>
-          </div>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>+38 044 111 11 11</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-mail" href="mailto:barbershop@email.com"
+                  ><svg width="24" height="24">
+                    <use href="./images/icons.svg#mail"></use>
+                  </svg>barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <h3 class="contacts-subtitle">Working hours</h3>
+          <p class="contacts-text">Every day from 9:00 to 22:00</p>
         </div>
       </section>
     </main>

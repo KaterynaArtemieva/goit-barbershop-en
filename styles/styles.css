@@ -9,6 +9,7 @@ body {
   --main-color: #303030;
   --light-color: #fff;
   --last-color: #555555;
+  --third-color: #9DA4BD;
   --light-bg-color: #F7F7F7;
 
   --timing-duration: 250ms;
@@ -152,7 +153,7 @@ button {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--third-color);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -264,7 +265,7 @@ button {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--third-color);
 }
 .prices-item:last-child {
   margin-bottom: 0;
@@ -361,14 +362,8 @@ button {
   padding-bottom: 84px;
   background-color: var(--light-bg-color);
 }
-.container {
-}
-.subtitle-main {
-}
 .barbers-title {
   margin-bottom: 44px;
-}
-.barbers-list {
 }
 .barbers-item {
   margin-bottom: 64px;
@@ -437,4 +432,142 @@ color: var(--accent-color);
 }
 .portfolio-item:last-child{
   margin-bottom: 0;
+}
+
+/* Форма */
+
+.booking-form {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191C26;;
+}
+.booking-title {
+  margin-bottom: 44px;
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+text-align: center;
+letter-spacing: 0.05em;
+color: var(--light-color);
+}
+.booking-form-input {
+  margin-bottom: 44px;
+  width: 100%;
+  height: 24px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.1em;
+color: var(--light-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.booking-form-input::placeholder {
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.4);
+}
+.booking-form-message {
+  margin-bottom: 44px;
+  resize: none;
+  width: 100%;
+  height: 76px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.1em;
+color: var(--light-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.booking-form-message::placeholder {
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.4); 
+}
+
+/* Контакты */
+
+.contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-image: url(../images/mobile/contacts_bkg.png), linear-gradient(#191C26, #191C26);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .contacts {
+    background-image: url(../images/mobile/contacts_bkg@2x.png), linear-gradient(#191C26, #191C26);
+    }
+}
+.contacts-title {
+  margin-bottom: 40px;
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+text-align: center;
+letter-spacing: 0.05em;
+color: var(--light-color);
+}
+.contacts-adress {
+  margin-bottom: 44px;
+}
+.contacts-list {
+}
+.contacts-item {
+  margin-bottom: 20px;
+  font-weight: 700;
+font-size: 18px;
+font-style: normal;
+line-height: calc(30/18);
+letter-spacing: 0.02em;
+color: var(--third-color);
+}
+.contacts-item:last-child {
+  margin-bottom: 0;
+}
+.contacts-phone {
+  text-decoration: none;
+  color: var(--third-color);
+}
+.contacts-mail {
+  color: var(--third-color);
+}
+.contacts-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color: var(--light-color);
+}
+.contacts-subtitle::before {
+  margin-right: 20px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--light-color);
+
+}
+.contacts-text {
+  font-size: 18px;
+line-height: calc(30/18);
+letter-spacing: 0.02em;
+color: var(--third-color);
 }
