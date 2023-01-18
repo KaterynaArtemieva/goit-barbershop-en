@@ -71,12 +71,12 @@
       <!-- Герой -->
       <section class="hero">
         <div class="container hero-wrap">
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href="#" class="social-link link">Instagram</a>
+          <ul class="hero-social-list list">
+            <li class="hero-social-item">
+              <a href="#" class="hero-social-link link">Instagram</a>
             </li>
-            <li class="social-item">
-              <a href="#" class="social-link link">Youtube</a>
+            <li class="hero-social-item">
+              <a href="#" class="hero-social-link link">Youtube</a>
             </li>
           </ul>
           <h3 class="subtitle-light">A hair salon for men in Kyiv</h3>
@@ -211,40 +211,184 @@
       <section class="barbers">
         <div class="container">
           <h3 class="subtitle-main">For true enjoyers of the atmosphere</h3>
-          <h2 class="barbers-title">Our barbers</h2>
+          <h2 class="title-main barbers-title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                class="barbers-img"
-                src="./images/barber-1.jpg"
-                alt="barber 1"
-                width="370"
-                height="346"
-              />
+              <picture class="barbers-photo">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_1.webp    1x,
+                    ./images/mobile/barber_1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_1.jpg    1x,
+                    ./images/mobile/barber_1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="barbers-img"
+                  src="./images/mobile/barber_1.jpg"
+                  alt="barber 1"
+                  width="418"
+                  height="346"
+                />
+              </picture>
               <p class="barber-name">John Smith</p>
               <p class="barber-position">Extreme Barber</p>
+              <ul class="list social-list">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="barbers-item">
-              <img
-                class="barbers-img"
-                src="./images/barber-2.jpg"
-                alt="barber 2"
-                width="370"
-                height="346"
-              />
+              <picture class="barbers-photo">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_2.webp    1x,
+                    ./images/mobile/barber_2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_2.jpg    1x,
+                    ./images/mobile/barber_2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="barbers-img"
+                  src="./images/mobile/barber_2.jpg"
+                  alt="barber 2"
+                  width="418"
+                  height="346"
+                />
+              </picture>
               <p class="barber-name">Michele Doe</p>
               <p class="barber-position">Extreme Barber</p>
+              <ul class="list social-list">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="barbers-item">
-              <img
-                class="barbers-img"
-                src="./images/barber-3.jpg"
-                alt="barber 3"
-                width="370"
-                height="346"
-              />
+              <picture class="barbers-photo">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_3.webp    1x,
+                    ./images/mobile/barber_3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ./images/mobile/barber_3.jpg    1x,
+                    ./images/mobile/barber_3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="barbers-img"
+                  src="./images/mobile/barber_3.jpg"
+                  alt="barber 3"
+                  width="418"
+                  height="346"
+                />
+              </picture>
               <p class="barber-name">Alan Black</p>
               <p class="barber-position">Extreme Barber</p>
+              <ul class="list social-list">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <svg width="20" height="20" class="social-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -256,36 +400,108 @@
           <h3 class="subtitle-main">In Latin, "barba" means "beard"</h3>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <img
-                src="./images/photo-1.jpg"
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_1.webp    1x,
+                    ./images/mobile/photo_1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_1.jpg    1x,
+                    ./images/mobile/photo_1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                src="./images/mobile/photo_1.jpg"
                 alt="photo 1"
-                width="270"
+                width="418"
                 height="360"
               />
+              </picture>
             </li>
             <li class="portfolio-item">
-              <img
-                src="./images/photo-2.jpg"
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_2.webp    1x,
+                    ./images/mobile/photo_2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_2.jpg    1x,
+                    ./images/mobile/photo_2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                src="./images/mobile/photo_2.jpg"
                 alt="photo 2"
-                width="270"
+                width="418"
                 height="360"
               />
+              </picture>
             </li>
             <li class="portfolio-item">
-              <img
-                src="./images/photo-3.jpg"
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_3.webp    1x,
+                    ./images/mobile/photo_3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_3.jpg    1x,
+                    ./images/mobile/photo_3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                src="./images/mobile/photo_3.jpg"
                 alt="photo 3"
-                width="270"
+                width="418"
                 height="360"
               />
+              </picture>
             </li>
             <li class="portfolio-item">
-              <img
-                src="./images/photo-4.jpg"
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_4.webp    1x,
+                    ./images/mobile/photo_4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    ./images/mobile/photo_4.jpg    1x,
+                    ./images/mobile/photo_4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                src="./images/mobile/photo_4.jpg"
                 alt="photo 4"
-                width="270"
+                width="418"
                 height="360"
               />
+              </picture>
             </li>
           </ul>
         </div>

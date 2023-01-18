@@ -9,6 +9,7 @@ body {
   --main-color: #303030;
   --light-color: #fff;
   --last-color: #555555;
+  --light-bg-color: #F7F7F7;
 
   --timing-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,11 +39,8 @@ img {
 a {
   display: inline-block;
 }
-address {
-  font-style: normal;
-}
-.address {
-  text-decoration: none;
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -158,7 +156,7 @@ address {
 }
 
 @media screen and (max-width: 767.98px) {
-  .social-list {
+  .hero-social-list {
     display: none;
   }
 }
@@ -297,7 +295,7 @@ address {
 
 .dignity {
   padding-top: 84px;
-  padding-bottom: 84px;
+  padding-bottom: 119px;
 }
 .title-main {
   margin-bottom: 20px;
@@ -321,7 +319,7 @@ address {
 .dignity-item {
   width: 194px;
   padding: 20px 35px;
-  background-color: #f7f7f7;
+  background-color: var(--light-bg-color);
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -358,3 +356,85 @@ address {
 
 /* Барберы */
 
+.barbers {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: var(--light-bg-color);
+}
+.container {
+}
+.subtitle-main {
+}
+.barbers-title {
+  margin-bottom: 44px;
+}
+.barbers-list {
+}
+.barbers-item {
+  margin-bottom: 64px;
+}
+.barbers-item:last-child {
+margin-bottom: 0;
+}
+.barbers-photo {
+  display: block;
+  margin-bottom: 30px;
+}
+.barber-name {
+  margin-bottom: 8px;
+  font-size: 18px;
+line-height: calc(25/18);
+text-align: center;
+letter-spacing: 0.02em;
+}
+.barber-position {
+  margin-bottom: 30px;
+  font-size: 14px;
+line-height: calc(19/14);
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  color: var(--main-color);
+}
+.social-link:hover,
+.social-link:focus {
+color: var(--accent-color);
+}
+.social-icon {
+  fill: currentColor;
+}
+
+/* Портфолио */
+
+.portfolio {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.portfolio .subtitle-main {
+  margin-bottom: 71px;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio-item:last-child{
+  margin-bottom: 0;
+}
