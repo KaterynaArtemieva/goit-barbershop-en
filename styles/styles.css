@@ -213,6 +213,7 @@ button {
   color: var(--last-color);
 }
 .booking-btn {
+
   padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
@@ -222,10 +223,18 @@ button {
   line-height: calc(16 / 12);
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: var(--main-color);
+}
+.booking-btn:hover,
+.booking-btn:focus,
+.booking-btn:active {
+  background-color: var(--accent-color);
+  color: var(--light-color);
 }
 
 /* Цены */
 .prices {
+  text-align: center;
   background-image: url(../images/mobile/prices_bkg.png),
     linear-gradient(#111319, #111319);
   background-repeat: no-repeat;
@@ -244,6 +253,7 @@ button {
   }
 }
 .prices-title {
+  text-align: left;
   margin-bottom: 44px;
   font-family: "Raleway";
   font-style: normal;
@@ -286,9 +296,6 @@ button {
   order: -1;
 }
 .booking-btn.price-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   color: var(--light-color);
 }
 
@@ -411,7 +418,8 @@ color: var(--accent-color);
   color: var(--main-color);
 }
 .social-link:hover,
-.social-link:focus {
+.social-link:focus,
+.social-link:active {
 color: var(--accent-color);
 }
 .social-icon {
@@ -464,6 +472,11 @@ color: var(--light-color);
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
+.booking-form-input:hover,
+.booking-form-input:active {
+  border-bottom: 1px solid var(--light-color);
+
+}
 .booking-form-input::placeholder {
   font-weight: 600;
 font-size: 11px;
@@ -471,6 +484,15 @@ line-height: calc(15/11);
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.4);
+}
+.booking-form-input:hover.booking-form-input::placeholder
+{
+  color: var(--light-color);
+}
+.booking-form-input:active.booking-form-input::placeholder,
+.booking-form-input:focus.booking-form-input::placeholder
+{
+  color: rgba(157, 164, 189, 0.4);
 }
 .booking-form-message {
   margin-bottom: 44px;
@@ -486,6 +508,11 @@ color: var(--light-color);
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
+.booking-form-message:hover,
+.booking-form-message:active {
+  border-bottom: 1px solid var(--light-color);
+
+}
 .booking-form-message::placeholder {
   font-weight: 600;
 font-size: 11px;
@@ -494,7 +521,14 @@ letter-spacing: 0.1em;
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.4); 
 }
-
+.booking-form-message:hover.booking-form-message::placeholder{
+  color: var(--light-color);
+}
+.booking-form-message:active.booking-form-message::placeholder,
+.booking-form-message:focus.booking-form-message::placeholder
+{
+  color: rgba(157, 164, 189, 0.4);
+}
 /* Контакты */
 
 .contacts {
@@ -526,8 +560,7 @@ color: var(--light-color);
 .contacts-adress {
   margin-bottom: 44px;
 }
-.contacts-list {
-}
+
 .contacts-item {
   margin-bottom: 20px;
   font-weight: 700;
@@ -540,12 +573,45 @@ color: var(--third-color);
 .contacts-item:last-child {
   margin-bottom: 0;
 }
+.contacts-adr{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: var(--third-color);
+}
+.contacts-adr::before {
+  margin-right: 16px;
+  content: '';
+  background-image: url(../images/map-pin.svg);
+width: 24px;
+height: 24px;
+}
 .contacts-phone {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
   color: var(--third-color);
 }
+.contacts-phone::before {
+  margin-right: 16px;
+  content: '';
+  background-image: url(../images/phone.svg);
+width: 24px;
+height: 24px;
+}
 .contacts-mail {
+  display: flex;
+  align-items: center;
   color: var(--third-color);
+}
+.contacts-mail::before {
+  margin-right: 16px;
+  content: '';
+  background-image: url(../images/mail.svg);
+width: 24px;
+height: 24px;
 }
 .contacts-subtitle {
   display: flex;
@@ -569,5 +635,46 @@ color: var(--light-color);
   font-size: 18px;
 line-height: calc(30/18);
 letter-spacing: 0.02em;
+color: var(--third-color);
+}
+
+/* Футер */
+
+.company-social {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.company-social-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.company-social-list::before {
+  margin-right: 20px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-color);
+}
+.company-social-item {
+  margin-right: 40px;
+}
+.company-social-item:last-child {
+  margin-right: 0;
+}
+.company-social-link {
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.2em;
+color: var(--main-color);
+
+}
+.copiright {
+  font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.2em;
 color: var(--third-color);
 }
