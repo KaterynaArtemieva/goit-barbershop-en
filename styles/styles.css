@@ -12,8 +12,7 @@ body {
   --third-color: #9DA4BD;
   --light-bg-color: #F7F7F7;
 
-  --timing-duration: 250ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing: 250ms ease;
 }
 
 .list {
@@ -52,7 +51,13 @@ button {
   min-width: 320px;
   max-width: 480px;
 }
-
+@media screen and (min-width:768px) {
+  .container {
+    padding-left: 39px;
+  padding-right: 39px;
+  max-width: 768px;
+  }
+}
 /* Хедер */
 
 .box {
@@ -63,8 +68,8 @@ button {
   left: 0;
   padding-top: 40px;
   padding-bottom: 40px;
-  transition: background-color var(--timing-duration) var(--timing-function),
-    backdrop-filter var(--timing-duration) var(--timing-function);
+  transition: background-color var(--timing),
+    backdrop-filter var(--timing);
 }
 .box.no-transparency {
   background-color: rgba(25, 28, 38, 0.5);
@@ -85,7 +90,6 @@ button {
   line-height: 0;
   fill: var(--light-color);
 }
-
 @media screen and (max-width: 767.98px) {
   .nav-list {
     display: none;
@@ -94,6 +98,67 @@ button {
     display: none;
   }
 }
+@media screen and (min-width:768px) {
+  .box {
+    padding-top: 32px;
+  }
+  .logo-link {
+    fill: var(--main-color);
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .logo-link {
+    margin-right: 48px;
+  }
+  .nav-link {
+  padding: 10px 10px;
+  font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.1em;
+color: var(--light-color);
+transition: color var(--timing);
+}
+.nav-link:hover {
+  color: var(--accent-color);
+}
+.booking-btn.header{
+  color: var(--light-color);
+}
+.contact-list{
+  padding-top: 10px;
+  text-align: center;
+}
+.contact-item:first-child{
+  margin-bottom: 20px;
+}
+.contact-phone-link {
+  padding: 10px 10px;
+  font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--light-color);
+transition: color var(--timing);
+}
+.contact-phone-link:hover,
+.contact-phone-link:focus,
+.contact-phone-link:active{
+  color: var(--accent-color);
+}
+}
+
 
 /* Герой */
 
@@ -161,6 +226,56 @@ button {
     display: none;
   }
 }
+@media screen and (min-width:768px) {
+  .hero {
+    background-image:none;
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+  .hero-wrap {
+    display: flex;
+  }
+  .hero-left-side {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-right-side {
+    padding: 272px 0 208px 100px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/tablet/slider_bkg_3.jpg);
+  }
+  .hero-social-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    transform: rotate(-90deg) translateY(26px);
+    transform-origin: top left;
+  }
+  .hero-social-item:first-child::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin-right: 40px;
+  }
+  .hero-social-item:first-child{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+  .hero-social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--main-color);
+    transition: color var(--timing);
+  }
+}
 
 /* About барбершоп */
 
@@ -224,6 +339,7 @@ button {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--main-color);
+  transition: background-color var(--timing), color var(--timing);
 }
 .booking-btn:hover,
 .booking-btn:focus,
@@ -416,6 +532,7 @@ color: var(--accent-color);
   background-color: var(--light-color);
   border-radius: 50%;
   color: var(--main-color);
+  transition: color var(--timing);
 }
 .social-link:hover,
 .social-link:focus,
@@ -447,7 +564,8 @@ color: var(--accent-color);
 .booking-form {
   padding-top: 84px;
   padding-bottom: 84px;
-  background-color: #191C26;;
+  background-color: #191C26;
+  text-align: center;
 }
 .booking-title {
   margin-bottom: 44px;
@@ -471,6 +589,7 @@ color: var(--light-color);
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom var(--timing);
 }
 .booking-form-input:hover,
 .booking-form-input:active {
@@ -484,6 +603,7 @@ line-height: calc(15/11);
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.4);
+transition: color var(--timing);
 }
 .booking-form-input:hover.booking-form-input::placeholder
 {
@@ -507,6 +627,7 @@ color: var(--light-color);
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom var(--timing);
 }
 .booking-form-message:hover,
 .booking-form-message:active {
@@ -519,7 +640,8 @@ font-size: 11px;
 line-height: calc(15/11);
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: rgba(157, 164, 189, 0.4); 
+color: rgba(157, 164, 189, 0.4);
+transition: color var(--timing); 
 }
 .booking-form-message:hover.booking-form-message::placeholder{
   color: var(--light-color);
@@ -576,11 +698,13 @@ color: var(--third-color);
 .contacts-adr{
   display: flex;
   align-items: center;
-  font-weight: 700;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
 color: var(--third-color);
+transition: color var(--timing);
+}
+.contacts-adr:hover,
+.contacts-adr:focus,
+.contacts-adr:active {
+  color: var(--accent-color);
 }
 .contacts-adr::before {
   margin-right: 16px;
@@ -593,6 +717,12 @@ height: 24px;
   display: flex;
   align-items: center;
   color: var(--third-color);
+  transition: color var(--timing);
+}
+.contacts-phone:hover,
+.contacts-phone:focus,
+.contacts-phone:active {
+  color: var(--accent-color);
 }
 .contacts-phone::before {
   margin-right: 16px;
@@ -605,8 +735,13 @@ height: 24px;
   display: flex;
   align-items: center;
   color: var(--third-color);
+  transition: color var(--timing);
 }
-.contacts-mail::before {
+.contacts-mail:hover,
+.contacts-mail:focus,
+.contacts-mail:active {
+  color: var(--accent-color);
+}.contacts-mail::before {
   margin-right: 16px;
   content: '';
   background-image: url(../images/mail.svg);
@@ -692,12 +827,14 @@ color: var(--third-color);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity var(--timing), visibility var(--timing);
 }
 .backdrop.is-open {
   opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
+
 .mobile-menu {
   width: 70vw;
   height: 100vh;
@@ -706,6 +843,13 @@ color: var(--third-color);
   top: 0;
   z-index: 100;
   background-color: var(--light-color);
+  transform: translateX(100%);
+  transition: transform var(--timing);
+  }
+
+  .backdrop.is-open .mobile-menu {
+          transform: translateX(0%);
+
   }
 .container-mobile-menu{
   position: relative;
