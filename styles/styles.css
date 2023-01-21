@@ -678,3 +678,119 @@ line-height: calc(15/11);
 letter-spacing: 0.2em;
 color: var(--third-color);
 }
+
+/* Мобайл-меню */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(46, 47, 66, 0.4);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.backdrop.is-open {
+  opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-menu {
+  width: 70vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background-color: var(--light-color);
+  }
+.container-mobile-menu{
+  position: relative;
+  padding-left: 40px;
+  padding-right: 31px;
+  padding-top: 118px;
+
+  min-width: 224px;
+  max-width: 337px;
+}
+.close-menu-btn {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  padding: 11PX 11px;
+  line-height: 0;
+}
+.mobile-nav-list {
+  margin-bottom: 64px;
+}
+.mobile-nav-item {
+  margin-bottom: 24px;
+}
+.mobile-nav-item:last-child{
+  margin-bottom: 0;
+}
+.mobile-nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(25/18);
+  letter-spacing: 0.1em;
+    color: var(--main-color);
+}
+.mobile-nav-link:active{
+  color: var(--accent-color);
+}
+.mobile-phone-link{
+  margin-bottom: 24px;
+  font-weight: 600;
+font-size: 18px;
+line-height: calc(25/18);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--main-color);
+}
+.mobile-phone-link:active{
+  color: var(--accent-color);
+}
+.booking-btn.mobile {
+  padding: 12px 37px;
+  margin-bottom: 64px;
+}
+.company-social-list-mobile {
+  max-width: 192px;
+}
+.company-social-link-mobile{
+  font-weight: 600;
+font-size: 14px;
+line-height: calc(19/14);
+letter-spacing: 0.2em;
+color: var(--main-color);
+}
+.company-social-item-mobile{
+  display: flex;
+  align-items: center;
+}
+.company-social-item-mobile:first-child::before {
+content: '';
+margin-right: 40px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-color);
+}
+.company-social-item-mobile:last-child{
+  padding-left: 100px;
+  margin-top: 24px;
+}
+.list {
+}
+.mobile {
+}
+.company-social-item {
+}
+.company-social-link {
+}

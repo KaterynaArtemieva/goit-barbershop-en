@@ -37,7 +37,7 @@
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
-          <button type="button" class="mobile-menu-open">
+          <button type="button" class="mobile-menu-open" data-menu-open>
             <svg width="40" height="40" class="mobile-menu-open-icon">
               <use href="./images/icons.svg#menu-burger"></use>
             </svg>
@@ -65,6 +65,52 @@
             <a href="#booking-form" class="booking-btn link">Online-booking</a>
           </li>
         </ul>
+        <div class="backdrop" data-menu>
+        <div class="mobile-menu">
+          <div class="container-mobile-menu">
+            <button type="button" class="close-menu-btn" data-menu-close>
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav-list list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link" href="./index.html#about">About</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link" href="#prices">Services and prices</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+            <a class="mobile-phone-link link" href="tel:+380441111111">+380441111111</a>
+            <a href="#booking-form" class="booking-btn mobile link">Online-booking</a>
+            <ul class="company-social-list-mobile list">
+              <li class="company-social-item-mobile">
+                <a
+                  class="company-social-link-mobile link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li class="company-social-item-mobile">
+                <a
+                  class="company-social-link-mobile link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div></div>
       </div>
     </header>
     <main>
@@ -655,5 +701,6 @@
       </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
