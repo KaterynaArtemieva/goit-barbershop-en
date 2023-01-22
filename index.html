@@ -75,16 +75,16 @@
             </button>
             <ul class="mobile-nav-list list">
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link" href="./index.html#about">About</a>
+                <a class="mobile-nav-link link" href="./index.html#about" data-menu-close>About</a>
               </li>
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link" href="#prices">Services and prices</a>
+                <a class="mobile-nav-link link" href="#prices" data-menu-close>Services and prices</a>
               </li>
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link" href="#barbers">Barbers</a>
+                <a class="mobile-nav-link link" href="#barbers" data-menu-close>Barbers</a>
               </li>
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link" href="#contacts">Contacts</a>
+                <a class="mobile-nav-link link" href="#contacts" data-menu-close>Contacts</a>
               </li>
             </ul>
             <a class="mobile-phone-link link" href="tel:+380441111111">+380441111111</a>
@@ -140,27 +140,64 @@
 
       <!-- About барбершоп -->
       <section class="about" id="about">
-        <div class="container">
-          <ul class="about-list list">
+        <div class="container about-wrap">
+          <ul class="about-list-photo list">
             <li class="about-item">
-              <img
-                class="about-img"
-                src="./images/image-1.jpg"
-                alt="Photo bard"
-                width="240"
-                height="445"
-              />
+              <picture class="about-photo">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/about_1.webp    1x,
+                    ./images/tablet/about_1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/about_1.jpg    1x,
+                    ./images/tablet/about_1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/tablet/about_1.jpg"
+                  alt="Photo bard"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
             <li class="about-item">
-              <img
-                class="about-img"
-                src="./images/image-2.jpg"
-                alt="Photo hair"
-                width="240"
-                height="445"
-              />
+              <picture class="about-photo">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/about_2.webp    1x,
+                    ./images/tablet/about_2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/about_2.jpg    1x,
+                    ./images/tablet/about_2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/tablet/about_2.jpg"
+                  alt="Photo hair"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
           </ul>
+          <div class="about-deskr">
           <h3 class="subtitle-main">About</h3>
           <h2 class="about-title">Best Barbershop in your city</h2>
           <p class="about-text-1">
@@ -174,7 +211,7 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <a href="#booking-form" class="booking-btn link">ONLINE-BOOKING</a>
+          <a href="#booking-form" class="booking-btn link">ONLINE-BOOKING</a></div>
         </div>
       </section>
       <!-- Цены -->
@@ -266,7 +303,7 @@
             <li class="barbers-item">
               <picture class="barbers-photo">
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_1.webp    1x,
                     ./images/mobile/barber_1@2x.webp 2x
@@ -274,7 +311,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_1.jpg    1x,
                     ./images/mobile/barber_1@2x.jpg 2x
@@ -345,7 +382,7 @@
             <li class="barbers-item">
               <picture class="barbers-photo">
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_2.webp    1x,
                     ./images/mobile/barber_2@2x.webp 2x
@@ -353,7 +390,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_2.jpg    1x,
                     ./images/mobile/barber_2@2x.jpg 2x
@@ -424,7 +461,7 @@
             <li class="barbers-item">
               <picture class="barbers-photo">
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_3.webp    1x,
                     ./images/mobile/barber_3@2x.webp 2x
@@ -432,7 +469,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767.98px)"
                   srcset="
                     ./images/mobile/barber_3.jpg    1x,
                     ./images/mobile/barber_3@2x.jpg 2x
@@ -512,7 +549,7 @@
             <li class="portfolio-item">
               <picture>
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_1.webp    1x,
                     ./images/mobile/photo_1@2x.webp 2x
@@ -520,7 +557,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_1.jpg    1x,
                     ./images/mobile/photo_1@2x.jpg 2x
@@ -538,7 +575,7 @@
             <li class="portfolio-item">
               <picture>
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_2.webp    1x,
                     ./images/mobile/photo_2@2x.webp 2x
@@ -546,7 +583,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_2.jpg    1x,
                     ./images/mobile/photo_2@2x.jpg 2x
@@ -564,7 +601,7 @@
             <li class="portfolio-item">
               <picture>
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_3.webp    1x,
                     ./images/mobile/photo_3@2x.webp 2x
@@ -572,7 +609,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_3.jpg    1x,
                     ./images/mobile/photo_3@2x.jpg 2x
@@ -590,7 +627,7 @@
             <li class="portfolio-item">
               <picture>
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_4.webp    1x,
                     ./images/mobile/photo_4@2x.webp 2x
@@ -598,7 +635,7 @@
                   type="image/webp"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:767.98px)"
                   srcset="
                     ./images/mobile/photo_4.jpg    1x,
                     ./images/mobile/photo_4@2x.jpg 2x
