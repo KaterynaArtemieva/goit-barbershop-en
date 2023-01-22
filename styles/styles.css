@@ -104,7 +104,11 @@ button {
   }
   .logo-link {
     fill: var(--main-color);
+    margin-right: 48px;
   }
+.no-transparency .logo-link {
+  fill: var(--light-color);
+}
   .mobile-menu-open {
     display: none;
   }
@@ -115,9 +119,6 @@ button {
   }
   .nav-list {
     display: flex;
-  }
-  .logo-link {
-    margin-right: 48px;
   }
   .nav-link {
   padding: 10px 10px;
@@ -475,6 +476,7 @@ line-height: calc(30/18);
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
+  max-width: 430px;
 }
 .dignity-text {
   margin-bottom: 44px;
@@ -482,10 +484,13 @@ line-height: calc(30/18);
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--last-color);
+  max-width: 500px;
 }
 .dignity-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 418px;
+  margin: 0 auto;
 }
 .dignity-item {
   width: 194px;
@@ -527,7 +532,7 @@ line-height: calc(30/18);
 @media screen and (min-width:768px) {
   .dignity {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 135px;
 }
 }
 /* Барберы */
