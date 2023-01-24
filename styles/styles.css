@@ -120,7 +120,7 @@ button {
   .logo-link:hover,
   .logo-link:focus,
   .logo-link:active {
-fill: var(--accent-color);
+    fill: var(--accent-color);
   }
   .no-transparency .logo-link {
     fill: var(--light-color);
@@ -466,15 +466,15 @@ fill: var(--accent-color);
   }
   .about-item:first-child {
     margin-bottom: 0;
-}
-.about-title {
-  font-size: 42px;
-line-height: calc(49/42);
-width: 470px;
-}
-.about-text-2 {
-  margin-bottom: 42px;
-}
+  }
+  .about-title {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    width: 470px;
+  }
+  .about-text-2 {
+    margin-bottom: 42px;
+  }
 }
 /* Цены */
 .prices {
@@ -576,7 +576,7 @@ width: 470px;
     line-height: calc(30 / 18);
   }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .prices-lists-all {
     display: flex;
     background: none;
@@ -590,10 +590,10 @@ width: 470px;
     margin-bottom: 0;
   }
   .prices-list-1 {
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
   .prices-list-2 {
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
   .prices {
     padding-top: 120px;
@@ -781,7 +781,7 @@ width: 470px;
   .barbers {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+  }
   .barbers-list {
     display: flex;
     gap: 30px;
@@ -792,10 +792,10 @@ width: 470px;
   .barbers-wrap {
     padding-left: 15px;
     padding-right: 15px;
-}
-.barbers-item {
-  margin-bottom: 0;
-}
+  }
+  .barbers-item {
+    margin-bottom: 0;
+  }
 }
 /* Портфолио */
 
@@ -837,10 +837,10 @@ width: 470px;
   .portfolio-img {
     width: 270px;
   }
-.portfolio {
+  .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+  }
 }
 /* Форма */
 
@@ -1074,7 +1074,7 @@ width: 470px;
 }
 
 @media screen and (min-width: 768px) {
-    .contacts {
+  .contacts {
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: url(../images/tablet/contacts_bkg.png),
@@ -1102,18 +1102,17 @@ width: 470px;
     width: 200px;
   }
 }
-@media screen and (min-width:1200px) {
-
+@media screen and (min-width: 1200px) {
   .book-cont-wrap {
-  background-color: #191c26;
-    }
+    background-color: #191c26;
+  }
   .contacts {
     width: 585px;
     margin: 0;
     background-image: url(../images/desktop/contacts_bkg.png);
-  padding-top: 130px;
-  padding-bottom: 120px;
-  padding-left: 100px;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 100px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1122,7 +1121,7 @@ width: 470px;
       background-image: url(../images/desktop/contacts_bkg@2x.png);
     }
   }
-  .contacts>.container {
+  .contacts > .container {
     padding-left: 0;
     padding-right: 0;
   }
@@ -1131,18 +1130,18 @@ width: 470px;
   }
   .contacts-adress {
     margin-bottom: 70px;
-}
+  }
   .booking-form {
     background-color: transparent;
     width: 585px;
     padding-top: 130px;
     padding-right: 30px;
   }
-  .booking-form>.container {
+  .booking-form > .container {
     padding-left: 0;
     padding-right: 0;
   }
-    .book-cont-wrap-2 {
+  .book-cont-wrap-2 {
     display: flex;
   }
 }
@@ -1321,11 +1320,114 @@ width: 470px;
   padding-left: 100px;
   margin-top: 24px;
 }
-.list {
+/* Слайдер */
+.slides {
+    padding: 0;
+    width: 1070px;
+    height: 680px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
 }
-.mobile {
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
-.company-social-item {
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
 }
-.company-social-link {
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
 }
