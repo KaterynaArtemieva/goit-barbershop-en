@@ -26,6 +26,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -142,46 +146,18 @@
             </ul>
           </div>
           <div class="slider">
-            <ul class="slides">
-              <input type="radio" name="radio-btn" id="img-1" checked />
-              <li class="slide-container">
-                <div class="slide">
-                  <img src="./images/desktop/slider_bkg_1.jpg" />
-                </div>
-                <div class="nav">
-                  <label for="img-3" class="prev">&#8592;</label>
-                  <label for="img-2" class="next">&#8594;</label>
-                </div>
-              </li>
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/desktop/slider_bkg_1.jpg" alt="Slider photo 1"></div>
+        <div class="swiper-slide"><img src="./images/desktop/slider_bkg_2.jpg" alt="Slider photo 2"></div>
+        <div class="swiper-slide"><img src="./images/desktop/slider_bkg_3.jpg" alt="Slider photo 3"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-              <input type="radio" name="radio-btn" id="img-2" />
-              <li class="slide-container">
-                <div class="slide">
-                  <img src="./images/desktop/slider_bkg_2.jpg" />
-                </div>
-                <div class="nav">
-                  <label for="img-1" class="prev">&#8592;</label>
-                  <label for="img-3" class="next">&#8594;</label>
-                </div>
-              </li>
-
-              <input type="radio" name="radio-btn" id="img-3" />
-              <li class="slide-container">
-                <div class="slide">
-                  <img src="./images/desktop/slider_bkg_3.jpg" />
-                </div>
-                <div class="nav">
-                  <label for="img-2" class="prev">&#8592;</label>
-                  <label for="img-1" class="next">&#8594;</label>
-                </div>
-              </li>
-
-              <li class="nav-dots">
-                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-              </li>
-            </ul>
             <!-- <div class="hero-right-side">
             <h3 class="subtitle-light">A hair salon for men in Kyiv</h3>
             <h1 class="hero-title">BarberShop</h1>
@@ -1076,6 +1052,7 @@
     </footer>
     <script src="./js/header.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
-  </body>
+    </body>
 </html>
