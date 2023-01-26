@@ -278,7 +278,7 @@ button {
   }
   .hero-text {
     font-size: 18px;
-line-height: calc(30/18);
+    line-height: calc(30 / 18);
   }
   .hero-right-side {
     padding: 272px 0 208px 100px;
@@ -336,20 +336,22 @@ line-height: calc(30/18);
     color: var(--accent-color);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-right-side {
-position: absolute;
-top: 0;
-left: 0;
-z-index: 500;
-background-image: none;
-}
-.hero-title {
-  font-size: 72px;
-line-height: calc(85/72);
-}
- 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-image: none;
   }
+  
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: calc(85 / 72);
+  }
+}
 
 /* About барбершоп */
 
@@ -1324,81 +1326,93 @@ line-height: calc(85/72);
   position: relative;
   width: 100%;
 }
-      .swiper {
-        width: 1070px;
-        height: 680px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .swiper-button-next:after, .swiper-button-prev:after {
-        color: var(--third-color);
-      }
-      .swiper-pagination.swiper-pagination-horizontal {
-        top: 50% !important;
-    position: absolute !important;
-    right: 20px !important;
-    transform: rotate(270deg) !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
+@media screen and (min-width: 1200px) {
+  .swiper {
+    width: 1070px;
+    height: 680px;
   }
-      .swiper-pagination-bullet{
-opacity: 1 !important; 
-        background: var(--third-color) !important;
-        border-radius: 0 !important;
-        width: 2px !important;
-        height: 8px !important;
-        margin-left: 12px !important;
-      }
-      .swiper-pagination-bullet:first-child {
-        margin-left: 0 !important;
-      }
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--third-color);
+}
+.swiper-pagination.swiper-pagination-horizontal {
+  top: 50% !important;
+  position: absolute !important;
+  right: 20px !important;
+  transform: rotate(270deg) !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: auto !important;
+}
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background: var(--third-color) !important;
+  border-radius: 0 !important;
+  width: 2px !important;
+  height: 8px !important;
+  margin-left: 12px !important;
+}
+.swiper-pagination-bullet:first-child {
+  margin-left: 0 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--light-color) !important;
   height: 18px !important;
-    }
-    .swiper-btn-wrap {
-      display: flex !important;
-      position: absolute;
-      bottom: 30px;
-    right: 56px;
-    }
-    .swiper-button-next, .swiper-button-prev {
-      position: absolute !important;
-    }
-    .swiper-button-next {
-      right: -35px !important;
-    }
-    .swiper-button-prev {
-      left: -60px !important;
-    }
-    @media screen and (max-width: 1199px) {
-      .swiper {
-        display: none;
-      }
-    }
+}
+.swiper-btn-wrap {
+  display: flex !important;
+  position: absolute;
+  bottom: 30px;
+  right: 56px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute !important;
+}
+.swiper-button-next {
+  right: -35px !important;
+}
+.swiper-button-prev {
+  left: -60px !important;
+}
+@media screen and (max-width: 767.98px) {
+  .swiper {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 580px;
+  }
+  .slide-photo {
+    width: 574px;
+  }
+}
