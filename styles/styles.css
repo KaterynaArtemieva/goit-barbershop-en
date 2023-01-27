@@ -1403,16 +1403,16 @@ button {
 .swiper-button-prev {
   left: -60px !important;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199px) {
   .swiper {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .swiper {
     width: 580px;
   }
   .slide-photo {
     width: 574px;
   }
-}
+} */
